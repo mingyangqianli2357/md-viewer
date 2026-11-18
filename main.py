@@ -15,7 +15,9 @@ ap.add_argument("--width", default="900")
 args = ap.parse_args()
 
 md = pathlib.Path(args.path).absolute()
-css = pathlib.Path(args.css).absolute()
+css = pathlib.Path(args.css)
+if not css.is_absolute():
+    css = pathlib.Path(__file__).resolve().parent / css
 
 p = subprocess.run(
     [
