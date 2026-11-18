@@ -1,6 +1,6 @@
 # mdview
 
-Linux 上预览 Markdown 的小工具。开一个窗口，显示渲染结果，关掉即退出。
+Linux 上预览 Markdown 的小工具。
 
 ## 安装
 
